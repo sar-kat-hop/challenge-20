@@ -1,3 +1,16 @@
+# dependencies
+/node_modules
+node_modules
+/.pnp
+.pnp.js
+
+# other
+.DS_Store
+.env.Local
+.env.development.Local
+.env.test.Local
+.env.production.Local
+
 # Logs
 logs
 *.log
