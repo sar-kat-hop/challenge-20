@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sar-kat-hop/react-portfolio-c20/static/css/main.c9376130.css",
+    "main.js": "/sar-kat-hop/react-portfolio-c20/static/js/main.1eae6edd.js",
+    "index.html": "/sar-kat-hop/react-portfolio-c20/index.html",
+    "main.c9376130.css.map": "/sar-kat-hop/react-portfolio-c20/static/css/main.c9376130.css.map",
+    "main.1eae6edd.js.map": "/sar-kat-hop/react-portfolio-c20/static/js/main.1eae6edd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9376130.css",
+    "static/js/main.1eae6edd.js"
+  ]
+}
