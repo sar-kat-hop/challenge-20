@@ -1,11 +1,4 @@
 import "./styles/index.css";
-import {
-  ApolloClient,
-  ApolloProvider,
-  ApolloLink,
-  // HttpLink
-} from "@apollo/client";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //components
