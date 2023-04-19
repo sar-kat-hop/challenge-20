@@ -2,23 +2,26 @@
   "name": "react-portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "watch": "nodemon server.js"
   },
   "keywords": [],
   "author": "Sarah Hopper",
   "license": "ISC",
   "description": "Portfolio of work",
   "dependencies": {
+    "apollo-server-express": "^3.12.0",
     "concurrently": "^8.0.1",
     "create-react-app": "^5.0.1",
-    "react": "^18.2.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "formik": "^2.2.9",
+    "react": "^18.2.0",
     "yup": "^1.1.1"
   }
 }
