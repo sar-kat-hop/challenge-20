@@ -13,14 +13,20 @@ function Navbar() {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             {/* use Link to direct each of these items to respective pages */}
-                            <li><a>Home</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
+                            <li>
+                                <a><Link to='/'> Home </Link></a>
+                            </li>
+                            <li>
+                                <a><Link to='/portfolio'> Portfolio </Link></a>
+                            </li>
+                            <li>
+                                <a><Link to='/about'> About Me </Link></a>
+                            </li>
                         </ul>
                     </div>
             </div>
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl">sarah.k.h.</a>
+                <a className="btn btn-ghost normal-case text-xl"><Link to='/about'>sarah.k.h.</Link></a>
             </div>
         </div>
     )

@@ -6,9 +6,10 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^13.5.0",
+    "create-react-app": "^5.0.1",
     "daisyui": "^2.51.5",
-    "react": "17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -39,7 +40,22 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.1",
-    "nodemon": "^2.0.22"
-  }
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "nodemon": "^2.0.22",
+    "tailwindcss": "^3.3.1"
+  },
+  "description": "## About",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sar-kat-hop/challenge-20.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sar-kat-hop/challenge-20/issues"
+  },
+  "homepage": "https://github.com/sar-kat-hop/challenge-20#readme"
 }

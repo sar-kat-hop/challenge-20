@@ -2,10 +2,13 @@ import "./styles/index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //components
-import { Navbar, Footer } from "./components";
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 //pages
-import { Home, AboutPg, PortfolioPg } from "./pages";
+import Home from './pages/Home';
+import AboutPg from './pages/AboutPg';
+import PortfolioPg from './pages/PortfolioPg';
 
 function App() {
   return (
