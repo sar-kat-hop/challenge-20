@@ -11,7 +11,7 @@ function Nav() {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             {/* use Link to direct each of these items to respective pages */}
-                            <li><a>Homepage</a></li>
+                            <li><a>Home</a></li>
                             <li><a>Portfolio</a></li>
                             <li><a>About</a></li>
                         </ul>

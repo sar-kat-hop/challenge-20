@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+// TODO: implement button links to pages
 
 function Header() {
     return (
@@ -8,7 +11,11 @@ function Header() {
                     <div className="max-w-md">
                         <h1 id="hello" className="mb-5 text-5xl font-bold">Hello.</h1>
                             <p id="welcome" className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button id="about-btn" className="btn btn-primary">Get Started</button>
+                            {/* buttons link to other pages */}
+                            <button id="about-btn" className="btn btn-outline btn-info">about me</button>
+                            <button id="portfolio-btn" className="btn btn-outline btn-success">portfolio</button>
+                            {/* keep for use later if adding a page, maybe use for separate contact page? */}
+                            {/* <button id="" className="btn btn-outline btn-warning"> some other page </button> */}
                     </div>
                 </div>
             </div>
