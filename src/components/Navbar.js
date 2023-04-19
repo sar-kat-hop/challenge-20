@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Nav() {
+// TODO: use Link to make <li> link to pages
+
+function Navbar() {
     return (
-        <div className="navbar bg-primary text-primary-content">
+        <div id="navbar" className="navbar bg-primary text-primary-content">
             <div className="navbar-start">
                 <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -11,7 +13,7 @@ function Nav() {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             {/* use Link to direct each of these items to respective pages */}
-                            <li><a>Homepage</a></li>
+                            <li><a>Home</a></li>
                             <li><a>Portfolio</a></li>
                             <li><a>About</a></li>
                         </ul>
@@ -24,7 +26,7 @@ function Nav() {
     )
 }
 
-export default Nav;
+export default Navbar;
 
 // daisyui has cool tab component that highlights active page... kind of interested in implementing this later, however it would require adding some logic to change className modifiers to correctly highlight active page
 {/* <div className="tabs">

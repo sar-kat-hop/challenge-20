@@ -1,14 +1,24 @@
 import "./styles/index.css";
-import {
-  ApolloClient,
-  ApolloProvider,
-  ApolloLink,
-  // HttpLink
-} from "@apollo/client";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //components
-import { Navbar, Header, Footer, About, Project } from "./components";
+import { Navbar, Footer } from "./components";
 
 //pages
+import { Home, AboutPg, PortfolioPg } from "./pages";
+
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/about' element={<AboutPg />}></Route>
+        <Route path='/portfolio' element={<PortfolioPg />}></Route>
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
