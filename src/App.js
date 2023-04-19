@@ -1,3 +1,5 @@
+import 'tailwindcss/tailwind.css';
+// import 'daisyui/dist/daisyui.css';
 import "./styles/index.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

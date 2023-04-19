@@ -6,6 +6,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* import daisyui */
+@import "../node_modules/daisyui/dist/full.css";
+
 /* CSS HEX */
 /* palette */
 :root {
