@@ -2,6 +2,21 @@ import "./styles/index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //components
-import { Navbar, Header, Footer, About, Project } from "./components";
+import { Navbar, Footer, About } from "./components";
 
 //pages
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/portfolio' element={<Portfolio />}></Route>
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
