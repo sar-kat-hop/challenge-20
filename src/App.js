@@ -2,17 +2,19 @@ import "./styles/index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //components
-import { Navbar, Footer, About } from "./components";
+import { Navbar, Footer } from "./components";
 
 //pages
+import { Home, AboutPg, PortfolioPg } from "./pages";
+
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/portfolio' element={<Portfolio />}></Route>
+        <Route path='/about' element={<AboutPg />}></Route>
+        <Route path='/portfolio' element={<PortfolioPg />}></Route>
       </Routes>
       <Footer />
     </Router>
