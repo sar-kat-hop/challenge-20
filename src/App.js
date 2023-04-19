@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css';
+import '../node_modules/daisyui/dist/base';
 // import 'daisyui/dist/daisyui.css';
 import "./styles/index.css";
 
