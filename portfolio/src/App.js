@@ -22,13 +22,6 @@ function App() {
             </div>
         </main>
 
-        {/* <Router>
-          <Routes>
-            <Route path='/' element={HomePg} />
-            <Route path='about' element={AboutPg} />
-            <Route path='portfolio' element={PortfolioPg} />
-          </Routes>
-        </Router> */}
         <Footer />
       </body>
   )

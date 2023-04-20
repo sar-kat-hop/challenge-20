@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AboutPg from '../pages/AboutPg';
-import About from '../components/About';
+// import About from '../components/About';
 import PortfolioPg from '../pages/PortfolioPg';
 import HomePg from '../pages/HomePg';
 
@@ -27,18 +27,16 @@ function Header() {
                     <a href="#contact-me">contact</a>
                 </p> */}
             </nav>
-
-            <Routes>
-                <Route path='/about' element={About}>
-                    {/* <AboutPg /> */}
-                </Route>
-                <Route path='/portfolio' element={PortfolioPg}>
-                    {/* <PortfolioPg /> */}
-                </Route>
-                <Route path='/' element={HomePg}>
-                    {/* <HomePg /> */}
-                </Route>
-            </Routes>
+            <div>
+                <Routes>
+                    <Route path='/about' element={AboutPg}>
+                    </Route>
+                    <Route path='/portfolio' element={PortfolioPg}>
+                    </Route>
+                    <Route path='/' element={HomePg}>
+                    </Route>
+                </Routes>
+            </div>
         </header>
         </Router>
     )
