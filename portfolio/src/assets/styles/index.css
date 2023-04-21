@@ -87,7 +87,7 @@ nav {
   font-family: var(--Poppins);
 }
 
-nav a {
+nav Link {
   text-decoration: none;
   font-size: 1.5rem;
   padding: 0 40px;
@@ -95,7 +95,7 @@ nav a {
   text-shadow: 2px 2px 5px var(--sapphire);
 }
 
-nav a:hover {
+nav Link:hover {
   cursor:pointer;
   text-shadow: 1px 1px 1px #679dbcc5;
 }

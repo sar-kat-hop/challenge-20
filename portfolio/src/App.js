@@ -1,22 +1,38 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import Project from './components/Project';
+import HomePg from './pages/HomePg';
+import PortfolioPg from './pages/PortfolioPg';
+import AboutPg from './pages/AboutPg';
 
 function App() {
   return(
-    <body>
-        <Header />
+    <Router>
+          <body>
+            <div>
+              <Header />
+          </div>
           <main>
-            <div className='centered'>
-              {/* <Project /> */}
-              <h1 id='hello-1'>hello.</h1>
-              <p id='lead'> thank you for visiting my portfolio! </p>
-              <p id='instructions'> please click the links above to read more about me or take a look at some of my work. </p>
-            </div>
+            <Routes>
+              <Route  
+                path='/'
+                element={<HomePg />}
+              />
+              <Route
+                path='/about'
+                element={<AboutPg />}
+              />
+              <Route
+                path='portfolio'
+                element={<PortfolioPg />}
+              />
+            </Routes>
           </main>
-        <Footer />
-      </body>
+          <Footer />
+          </body>
+      </Router>
   )
 };
 
