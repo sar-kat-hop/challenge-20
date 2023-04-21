@@ -7,15 +7,15 @@ function Header() {
             <h1 id='nav-head'>sarah <span id='kat'>k.</span> h.</h1>
                 <nav>
                     <p>
-                        <Link to='/'>home</Link>
+                        <Link className='link' to='/'>home</Link>
                     </p>
                     <p>
                         {/* <a href="#about-me">about</a> */}
-                        <Link to='/about'>about</Link>
+                        <Link className='link' to='/about'>about</Link>
                     </p>
                     <p>
                         {/* <a href="#flex">portfolio</a> */}
-                        <Link to='/portfolio'>portfolio</Link>
+                        <Link className='link' to='/portfolio'>portfolio</Link>
                     </p>
                     {/* may implement in future but currently just have contact info in footer */}
                     {/* <p>
