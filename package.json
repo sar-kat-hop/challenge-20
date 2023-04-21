@@ -1,12 +1,16 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "18.x"
+  },
   "homepage": "https://sar-kat-hop.github.io/react-portfolio-c20/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "node": "^18.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
@@ -40,5 +44,17 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
+  },
+  "description": "## About",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sar-kat-hop/challenge-20.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sar-kat-hop/challenge-20/issues"
   }
 }
