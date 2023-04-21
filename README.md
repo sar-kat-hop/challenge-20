@@ -8,13 +8,13 @@ While my original goal was to use TailwindCSS and DaisyUI, I was unable to get t
 
 ### Screenshots
 The homepage:
-[!](./src/assets/images/screenshot1.png)
+![](./src/assets/images/screenshot1.png)
 
 The About page:
-[!](./src/assets/images/screenshot2.png)
+![](./src/assets/images/screenshot2.png)
 
 The portfolio page:
-[1](./src/assets/images/screenshot3.png)
+![](./src/assets/images/screenshot3.png)
 
 ## Installation & Use
 
