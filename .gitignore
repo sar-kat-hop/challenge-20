@@ -7,14 +7,11 @@
 old/
 /old
 node_modules/
-portfolio/
-/portfolio
 
 # testing
 /coverage
 
 # production
-/build
 
 # misc
 .DS_Store
