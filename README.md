@@ -14,5 +14,8 @@ The following resources were used in the creation of this project, in no particu
 * [Tailwind Docs](https://tailwindcss.com/docs/guides/create-react-app)
 * [Free Code Camp: How to Rename Git Branch](https://www.freecodecamp.org/news/git-rename-branch-how-to-change-a-local-branch-name/)
 * [DaisyUI](https://daisyui.com/)
+* [React Router Docs](https://reactrouter.com/en/main/start/overview)
+* [FreeCodeCamp forum post on react router difficulties](https://forum.freecodecamp.org/t/why-is-my-react-router-not-working/257114)
+* [Chat GPT, for assistance with 'wiggle' CSS animation](https://chat.openai.com/)
 * [CodeMyUI Gist on W3 svg icons and CSS styling](https://gist.github.com/CodeMyUI/0d52aa4075d25177df0281ac8a5e51f2)
 * [GitHub Markdown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
