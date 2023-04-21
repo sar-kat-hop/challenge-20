@@ -5,6 +5,8 @@
 :root {
   --Poppins: 'Poppins', 'Avenir', 'Open Sans', sans-serif;
   --Cursive: 'Pacifico', cursive, serif;
+  --meow: 'Meow Script', cursive, serif;
+  --freddy: 'Fredericka the Great', cursive, serif;
   --blue: #31cfff;
   --rose: #d8818bfa;
   --sapphire: #1a3982;
@@ -13,16 +15,22 @@
 
 /* new palette */
   --cerulean: #0081a7ff;
-  --non-photo-blue: #a4ddedff;
+  --non-photo-blue: #a4dded;
   --seashell: #fff5eeff;
   --almond: #efdecdff;
   --amaranth-purple: #ab274fff;
+  --translucent:  rgb(164, 221, 237, 40%);
 
   /* --border: 1px solid black; */
 }
 
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 body {
@@ -35,42 +43,18 @@ body {
   /* background-size: 100%; */
   background-position: 50%;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column; 
+  min-height: 100%;
 }
 
 /* To display header title on top of nav bar links: */
 .main-header {
   display: block;
   text-align: center;
-}
-
-h1 {
-  font-family: var(--Cursive);
-  font-size: 1.75rem;
-  color: var(--cerulean);
-  margin: 10px auto;
-}
-
-#nav-head {
-  font-size: 2.75rem;
-  text-shadow: 2px 2px 5px var(--non-photo-blue);
-}
-
-#hello-1 {
-  font-size: 6rem;
-  color: var(--amaranth-purple);
-  margin: 15px auto;
-}
-
-#lead {
-  font-size: 1.5rem;
-  color: var(--seashell);
-  text-shadow: 2px 2px 3px var(--cerulean);
-}
-
-#instructions {
-  font-size: 1.15rem;
-  color: var(--seashell);
-  text-shadow: 2px 2px 3px var(--cerulean);
+  animation: slideInTop 0.5s ease;
+  animation-fill-mode: forwards;
+  transform: translateY(-100%);
 }
 
 #kat {
@@ -83,21 +67,83 @@ nav {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 1vh;
   font-family: var(--Poppins);
+  /* border-bottom: dotted 2px var(--cerulean); */
 }
 
-nav Link {
+nav p {
   text-decoration: none;
   font-size: 1.5rem;
-  padding: 0 40px;
-  color: var(--seashell);
-  text-shadow: 2px 2px 5px var(--sapphire);
+  padding: 0 1vw;
 }
 
-nav Link:hover {
+nav p :hover {
+  border: dotted var(--cerulean); 
+  border-radius: 10px;
   cursor:pointer;
   text-shadow: 1px 1px 1px #679dbcc5;
+  /* scale: 125%; */
+}
+
+.link {
+  text-decoration: none;
+  color: var(--seashell);
+  text-shadow: 2px 2px 5px var(--sapphire);
+  padding: 10px;
+}
+
+h1 {
+  font-family: var(--Cursive);
+  font-size: 1.75rem;
+  color: var(--cerulean);
+  margin: 0 auto;
+}
+
+#nav-head :hover {
+  text-shadow: 5px 5px 5px var(--amaranth-purple);
+}
+
+#nav-head {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px var(--non-photo-blue);
+  margin: 2vh 0;
+}
+
+#hello-1 {
+  font-size: 6rem;
+  color: var(--amaranth-purple);
+  margin: 0 10% auto;
+  animation: fadeIn 2s;
+}
+
+.hello p {
+  font-size: 1.5rem;
+  margin-bottom: 5vh;
+  /* animation: fadeIn 3s; */
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+#lead {
+  font-size: 1.75rem;
+  font-family: var(--Cursive);
+  color: var(--cerulean);
+  text-shadow: 2px 2px 3px var(--seashell);
+}
+
+#instructions {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--seashell);
+  text-shadow: 2px 2px 3px var(--cerulean);
 }
 
 main {
@@ -106,32 +152,44 @@ main {
   margin-top: 2%; */
   align-items: center;
   text-align: center;
-}
-
-/* This section is meant to sit on top of the flex container with my projects */
-.hello {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 0 200px;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
+  flex: 1 0 auto;
 }
 
 .centered {
-  position: fixed;
+  flex-wrap: wrap;
+  /* flex: 1 0 200px; */
+  justify-content: center;
+  text-align: center;
+  margin: 0 25% auto;
+  margin-bottom: 15vh;
+  /* position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   /* background-image: url(../images/cardbg.jpg);
   background-position: 100%; */
   /* backdrop-filter: blur(50px);
   opacity: 0.5; */
-  border: 5px var(--almond) dotted;
-  border-radius: 2.5%;
-  padding: 5%;
-  margin-right: 10%;
+  border: 3px var(--cerulean) dotted;
+  border-radius: 20px;
+  padding: 2.5%;
+  /* margin-bottom: 15vh; */
+  /* margin-right: 10%; */
+  animation: fadeIn 2s;
+  /* transform: scale 2s; */
+  background-color: var(--translucent);
+  box-shadow: 0px 10px 15px 0px var(--cerulean);
+;
 }
+
+/* .centered :hover {
+  scale: 125%;
+} */
+
+/* @keyframes scale {
+  0% {scale: 75%}
+  100% {scale: 100%};
+} */
 
 h2 {
   font-family: 'Oooh Baby', cursive, serif;
@@ -146,42 +204,51 @@ h2 {
   100% {opacity: 1};
 }
 
+.about-me {
+  color: var(--cerulean);
+  margin: 2vh 15vw;
+  padding-bottom: 1vh;
+  animation: fadeIn 1s;
+}
+
+#about-head {
+  font-family: var(--Cursive);
+  font-size: 3rem;
+  color: var(--cerulean);
+  text-shadow: 1px 1px 5px var(--seashell);
+  margin: 1vh;
+  padding: 1vh;
+}
+
 #photo {
   border: 4px var(--sapphire) dotted;
   border-radius: 180px;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
-  margin-top: 0;
+  width: 150px;
+  height: 150px;
   /* animation: fadeIn 8s; */
 }
 
-.hello p {
-  font-size: 1.5rem;
-  margin-bottom: 5vh;
-  animation: fadeIn 3s;
+
+.about-me p {
+  /* border: 4px dotted var(--cerulean); */
+  font-family: var(--Poppins);
+  font-size: 1.25rem;
+  /* font-weight: 300; */
+  color: var(--seashell);
+  text-shadow: 2px 2px 10px black;
+  text-align: justify;
+  /* padding-bottom: 10px; */
+  padding: 3vw;
+  background-color: var(--translucent);
+  box-shadow: 0px 10px 15px 0px var(--cerulean);
+  border: 3px var(--cerulean) dotted;
+  border-radius: 20px;
+  padding: 2.5%;
 }
 
 #accent {
   color: var(--non-photo-blue);
   font-weight: 300;
-}
-
-.about-me {
-  font-family: var(--Cursive);
-  font-size: 1.75rem;
-  color: var(--cerulean);
-  margin: 2vh 5vw;
-  animation: fadeIn 5s;
-}
-
-.about-me p {
-  font-family: var(--Poppins);
-  font-size: 1rem;
-  color: black;
-  text-align: justify;
-  /* padding-bottom: 10px; */
-  margin: 0 auto;
 }
 
 .flex {
@@ -297,25 +364,116 @@ h5 {
   text-shadow: 2px 1px 5px var(--sapphire);
 }
 
-#github, #linkedin {
-  margin-right: 20px;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+#made-by {
+  color: var(--non-photo-blue);
+  /* font-family: var(--meow); */
+  font-family: var(--Cursive);
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: overline 2px var(--cerulean);
+  margin-bottom: 5vh;
+  /* text-shadow: 1px 1px 5px var(--sapphire); */
+}
+
+#heart {
+  color: var(--amaranth-purple);
+  text-shadow: 1px 1px 5px var(--seashell);
+  /* scale: 120%; */
+}
+
+#connect {
+  color: var(--non-photo-blue);
+  font-weight: 300;
+  font-size: .95rem;
+  font-style: italic;
+  /* text-shadow: 1px 1px 5px var(--seashell); */
+}
+
+#icons {
+  transform: scale(175%);
+  margin: 1vh;
+  padding: 2vh;
+}
+
+#github {
+  padding: 0 0.75vw;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+#linkedin {
+  padding: 0 0.75vw;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+svg {
+  fill: var(--non-photo-blue);
+}
+
+#github :hover {
+  animation: wiggle .5s ease-out;
+  animation-iteration-count: 1;
+  padding: 0;
+  margin: 0;
+  fill: var(--seashell);
+  scale: 115%;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#linkedin :hover {
+  animation: wiggle .5s ease-out;
+  animation-iteration-count: 1;
+  padding: 0;
+  margin: 0;
+  fill: var(--seashell);
+  scale: 115%;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50%{
+    transform: rotate(-5deg);
+  }
+  75%{
+    transform: rotate(3deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 
 footer {
   text-align: center;
   text-shadow: 2px 2px 1px #679dbcc5;
-  font-size: 0.85rem;
-  color: var(--sapphire);
-  margin: 20px;
-  padding-top: 5px;
-  position: fixed;
+  margin: 0 auto;
+  /* padding-top: 15vh; */
+  /* position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
+  flex-shrink: 0;
   width: 100%;
+  animation: slideInBottom .5s ease-out;
+  animation-fill-mode: forwards;
+  transform: translateY(100%)
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
