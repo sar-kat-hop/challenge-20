@@ -7,14 +7,12 @@ This is a portfolio showcasing the group projects I contributed to while a stude
 While my original goal was to use TailwindCSS and DaisyUI, I was unable to get them to work as hoped and decided to adapt and add to the vanilla CSS from my original portfolio. The end result doesn't exactly match my original vision, but I enjoyed refreshing my vanilla CSS by experimenting with simple but fun animations and remembering how to implement an effective flexbox layout again without the help of a CSS framework. 
 
 ### Screenshots
-The homepage:
-![](../challenge-20/skh-react-portfolio/src/assets/images/screenshot1.png)
 
-The About page:
-![](../challenge-20/skh-react-portfolio/src/assets/images/screenshot2.png)
+![Homepage](./skh-react-portfolio/src/assets/images/screenshot1.png)
 
-The portfolio page:
-![](../challenge-20/skh-react-portfolio/src/assets/images/screenshot3.png)
+![About](./skh-react-portfolio/src/assets/images/screenshot2.png)
+
+![Portfolio](./skh-react-portfolio/src/assets/images/screenshot3.png)
 
 ## Installation & Use
 
