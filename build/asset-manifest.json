@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.afff294e.css",
-    "main.js": "/static/js/main.fd75dfe0.js",
-    "static/media/skybg.jpg": "/static/media/skybg.8ae6ca26d6a639f584c0.jpg",
-    "static/media/yodaspeak.png": "/static/media/yodaspeak.b1a93ed536ee664b3794.png",
-    "static/media/tasker.jpg": "/static/media/tasker.8667be9aa6c7a6562a24.jpg",
-    "static/media/myPhoto.jpeg": "/static/media/myPhoto.31e62ecb0ab11657e785.jpeg",
-    "static/media/presentpear.png": "/static/media/presentpear.a07aea2bc42b5c739e9b.png",
-    "index.html": "/index.html",
-    "main.afff294e.css.map": "/static/css/main.afff294e.css.map",
-    "main.fd75dfe0.js.map": "/static/js/main.fd75dfe0.js.map"
+    "main.css": "/react-portfolio-c20/static/css/main.fe1ce2e3.css",
+    "main.js": "/react-portfolio-c20/static/js/main.da78f6ae.js",
+    "static/media/skybg.jpg": "/react-portfolio-c20/static/media/skybg.8ae6ca26d6a639f584c0.jpg",
+    "static/media/yodaspeak.png": "/react-portfolio-c20/static/media/yodaspeak.b1a93ed536ee664b3794.png",
+    "static/media/tasker.jpg": "/react-portfolio-c20/static/media/tasker.8667be9aa6c7a6562a24.jpg",
+    "static/media/myPhoto.jpeg": "/react-portfolio-c20/static/media/myPhoto.31e62ecb0ab11657e785.jpeg",
+    "static/media/presentpear.png": "/react-portfolio-c20/static/media/presentpear.a07aea2bc42b5c739e9b.png",
+    "index.html": "/react-portfolio-c20/index.html",
+    "main.fe1ce2e3.css.map": "/react-portfolio-c20/static/css/main.fe1ce2e3.css.map",
+    "main.da78f6ae.js.map": "/react-portfolio-c20/static/js/main.da78f6ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.afff294e.css",
-    "static/js/main.fd75dfe0.js"
+    "static/css/main.fe1ce2e3.css",
+    "static/js/main.da78f6ae.js"
   ]
 }
